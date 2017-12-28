@@ -11,7 +11,7 @@ d3.json("./data/painFargo.json", function(error, dataFRGpainLoad) {
 $( document ).ready(function() {
   $("#meds").css("background-color","#333");
 $( ".myButton2" ).click(function() {
-  $(".myButton2").css("background-color","#888");
+  $(".myButton2").css("background-color","#d7d6c5");
   $(this).css("background-color","#333");
   });   
 $( "#meds" ).click(function() {
@@ -59,7 +59,7 @@ nv.addGraph(function() {
       .stacked(true)
       .reduceXTicks(false)
       //.groupSpacing(0.1)    //Distance between each group of bars.
-      .color(['#BCBCBC', '#808080', '#515151', '#2B2B2B', '#121212'])
+      .color(['#B6CAAE', '#F0EAD8', '#266E42', '#D8E1CE', '#75A27C'])
       .tooltip(function(key, x, y, e, graph) {  
       	if ((key == "St. Cloud") || (key == "Minneapolis") || (key == "Fargo")) { return "<h3>" + key + "</h3>" + "<span class='pos_change'>" +  y + " </span> in " + x; }
       	else { return "<h3>" + key + " Prescriptions</h3>" + "<span class='pos_change'>" +  y + " </span> in " + x; }
